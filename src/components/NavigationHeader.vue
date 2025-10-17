@@ -17,19 +17,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <router-link class="nav-link" to="/">Home <span
+                                    class="sr-only">(current)</span></router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html"> About</a>
+                            <router-link class="nav-link" to="/about"> About</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="service.html">Services</a>
+                            <router-link class="nav-link" to="/services">Services</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="why.html">Why Us</a>
+                            <router-link class="nav-link" to="/why">Why Us</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team.html">Team</a>
+                            <router-link class="nav-link" to="/team">Team</router-link>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
