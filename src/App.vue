@@ -8,6 +8,14 @@
     <NavigationHeader />
     <HeroCrypto />
   </div>
+  <HeroSection title="CADT" title2="IDG">
+    <template #subtitle>
+      <p>Hello World</p>
+    </template>
+    <template #content>
+      <p>Content</p>
+    </template>
+  </HeroSection>
   <OurService />
   <About />
   <WhyChooseUs />
@@ -127,6 +135,7 @@ import About from '@/components/About.vue';
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
 import OurTeam from './components/OurTeam.vue';
 import Footer from '@/components/Footer.vue';
+import HeroSection from '@/components/HeroSection.vue';
 export default {
   components: {
     NavigationHeader,
@@ -135,7 +144,8 @@ export default {
     WhyChooseUs,
     OurService,
     OurTeam,
-    Footer
+    Footer,
+    HeroSection
   },
 
 

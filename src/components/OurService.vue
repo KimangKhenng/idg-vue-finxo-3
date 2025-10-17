@@ -1,34 +1,31 @@
 <template>
-    <section class="service_section layout_padding">
-        <div class="service_container">
-            <div class="container ">
-                <div class="heading_container heading_center">
-                    <h2>
-                        Our <span>Services</span>
-                    </h2>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration
-                    </p>
-                </div>
-                <div class="row">
-                    <ServiceBox v-for="(item, index) in services" :title="item.title" :description="item.description"
-                        :icon="item.icon" :key="index" />
-                </div>
-                <div class="btn-box">
-                    <a href="">
-                        View All
-                    </a>
-                </div>
+    <HeroSection title="Our" title2="Services">
+        <template #subtitle>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration
+            </p>
+        </template>
+        <template #content>
+            <div class="row">
+                <ServiceBox v-for="(item, index) in services" :title="item.title" :description="item.description"
+                    :icon="item.icon" :key="index" />
             </div>
-        </div>
-    </section>
+            <div class="btn-box">
+                <a href="">
+                    View All
+                </a>
+            </div>
+        </template>
+    </HeroSection>
 </template>
 <script>
 import ServiceBox from '@/components/ServiceBox.vue';
+import HeroSection from '@/components/HeroSection.vue';
 export default {
     components: {
-        ServiceBox
+        ServiceBox,
+        HeroSection
     },
     data() {
         return {
