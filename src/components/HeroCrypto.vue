@@ -8,8 +8,7 @@
                             <div class="col-md-6 ">
                                 <div class="detail-box">
                                     <h1>
-                                        Crypto <br>
-                                        Currency
+                                        {{ $t('cypto_currency') }}
                                     </h1>
                                     <p>
                                         Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat
@@ -20,7 +19,7 @@
                                     </p>
                                     <div class="btn-box">
                                         <a href="" class="btn1">
-                                            Read More
+                                            {{ $t('read_more') }}
                                         </a>
                                     </div>
                                 </div>

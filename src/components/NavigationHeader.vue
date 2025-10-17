@@ -40,8 +40,23 @@
                             </button>
                         </form>
                     </ul>
+                    <button @click="switchLanguage">Switch Language</button>
                 </div>
             </nav>
         </div>
     </header>
 </template>
+<script>
+export default {
+    methods: {
+        switchLanguage() {
+            const locale = this.$i18n.locale;
+            if (locale === 'en') {
+                this.$i18n.locale = 'km';
+            } else {
+                this.$i18n.locale = 'en';
+            }
+        }
+    }
+}
+</script>
