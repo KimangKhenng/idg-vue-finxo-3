@@ -16,19 +16,19 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  ">
-                        <li class="nav-item active">
+                        <li class="nav-item" :class="{ active: $route.path == '/' }">
                             <router-link class="nav-link" to="/">Home </router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" :class="{ active: $route.path == '/about' }">
                             <router-link class="nav-link" to="/about"> About</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" :class="{ active: $route.path == '/services' }">
                             <router-link class="nav-link" to="/services">Services</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" :class="{ active: $route.path == '/why' }">
                             <router-link class="nav-link" to="/why">Why Us</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" :class="{ active: $route.path == '/team' }">
                             <router-link class="nav-link" to="/team">Team</router-link>
                         </li>
                         <li class="nav-item">
